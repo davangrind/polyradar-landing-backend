@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MIN_USD: "100"
+      POLL_INTERVAL_SEC: "7.5"
+      SINCE_SEC: "60"
+      EMIT_INTERVAL_MIN_SEC: "3"
+      EMIT_INTERVAL_MAX_SEC: "5"
+      CORS_ORIGINS: "https://your-landing.com"
